@@ -41,7 +41,7 @@ Then add the property `data-tooltip-label` with the text you want in your toolti
 ```
 
 ## :warning: Important
-Now the JavaScript is working fine. But we need to add some styles to make the tooltip box work properly. The needed styles are:
+Now the JavaScript is working fine. But we need to add some css to make the tooltip box work properly. The needed style is:
 ```css
 .tooltip {
   position: absolute;
@@ -61,3 +61,5 @@ And this is the style in used in the example page:
   background-color: rgba(0, 0, 0, 0.5);
 }
 ```
+
+> :bulb: Is recommended to add `overflow: hidden` to the body element
