@@ -26,8 +26,8 @@ function initTooltip() {
 
 	const handleMouseMove = {
 		handleEvent(e) {
-			this.tooltipbox.style.top = e.clientY + 25 + 'px';
-			this.tooltipbox.style.left = e.clientX + 13 +'px';
+			this.tooltipbox.style.top = e.pageY + 25 + 'px';
+			this.tooltipbox.style.left = e.pageX + 13 + 'px';
 		}
 	}
 
@@ -37,7 +37,7 @@ function initTooltip() {
 		tooltip.classList.add('tooltip');
 
 		document.body.appendChild(tooltip);
-		
+
 		return tooltip;
 	}
 }
